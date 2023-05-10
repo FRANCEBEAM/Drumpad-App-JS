@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Pad App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <div class="drumpad-container">
+                <div class="top-navigation">
+                    <div class="drum-name">
+                        <h1>DRUM PAD APP</h1>
+                        <h3>High Quality Drum Kit</h3>
+                    </div>
+    
+                    <div class="presets">
+                        <label>Presets:</label>
+                        <select>
+                            <option value="jazzkit">Work in progress</option>
+                            <option value="jazzkit">Jazz Drum Kit</option>
+                            <option value="jazzkit">Metal Drum Kit</option>
+                            <option value="jazzkit">Pop Drum Kit</option>
+                            <option value="jazzkit">Rock Drum Kit</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="pads-container">
+                    <div class="row-1">
+                        <div class="pad" id="crash">
+                            <audio class="crash" src="/assets/sounds/jazzkit/crash.wav"></audio>
+                            <img src="/assets/hihat.svg" draggable="false" alt="">
+                            <span>Crash</span>
+                            <p>Q</p>
+                        </div>
+                        <div class="pad" id="splash">
+                            <audio class="splash" src="/assets/sounds/jazzkit/splash.wav"></audio>
+                            <img src="/assets/hihat.svg" draggable="false"alt="">
+                            <span>Splash</span>
+                            <p>W</p>
+                        </div>
+                        <div class="pad" id="ride">
+                            <audio class="ride" src="/assets/sounds/jazzkit/ride.wav"></audio>
+                            <img src="/assets/hihat.svg" draggable="false" alt="">
+                            <span>Ride</span>
+                            <p>E</p>
+                        </div>
+                        <div class="pad" id="openhh">
+                            <audio class="openhh" src="/assets/sounds/jazzkit/openhh.wav"></audio>
+                            <img src="/assets/hihat.svg" draggable="false" alt="">
+                            <span>Open - HiHat</span>
+                            <p>R</p>
+                        </div>
+                    </div>
+
+                    <div class="row-2">
+                        <div class="pad" id="hitom">
+                            <audio class="tom1" src="/assets/sounds/jazzkit/tom1.wav"></audio>
+                            <img src="/assets/tom.svg" draggable="false" alt="">
+                            <span>Hi - tom</span>
+                            <p>T</p>
+                        </div>
+                        <div class="pad" id="midtom">
+                            <audio class="tom2" src="/assets/sounds/jazzkit/tom2.wav"></audio>
+                            <img src="/assets/tom.svg" draggable="false"alt="">
+                            <span>Mid - Tom</span>
+                            <p>Y</p>
+                        </div>
+                        <div class="pad" id="lotom">
+                            <audio class="tom3" src="/assets/sounds/jazzkit/tom3.wav"></audio>
+                            <img src="/assets/tom.svg" draggable="false" alt="">
+                            <span>Lo - Tom</span>
+                            <p>U</p>
+                        </div>
+                        <div class="pad" id="floortom">
+                            <audio class="floortom" src="/assets/sounds/jazzkit/floortom.wav"></audio>
+                            <img src="/assets/tom.svg" draggable="false" alt="">
+                            <span>Floor - Tom</span>
+                            <p>I</p>
+                        </div>
+                    </div>
+
+                    <div class="row-3">
+                        <div class="pad" id="snarerim">
+                            <audio class="snarerim" src="/assets/sounds/jazzkit/snarerim.wav"></audio>
+                            <img src="/assets/snare.svg" draggable="false" alt="">
+                            <span>Snare Rim</span>
+                            <p>A</p>
+                        </div>
+                        <div class="pad" id="snarehit">
+                            <audio class="snarehit" src="/assets/sounds/jazzkit/snarehit.wav"></audio>
+                            <img src="/assets/snare.svg" draggable="false"alt="">
+                            <span>Snare Hit</span>
+                            <p>S</p>
+                        </div>
+                        <div class="pad" id="halfhh">
+                            <audio class="halfhh" src="/assets/sounds/jazzkit/halfhh.wav"></audio>
+                            <img src="/assets/hihat.svg" draggable="false" alt="">
+                            <span>Half - HiHat</span>
+                            <p>D</p>
+                        </div>
+                        <div class="pad" id="pedalhh">
+                            <audio class="pedalhh" src="/assets/sounds/jazzkit/pedalhh.wav"></audio>
+                            <img src="/assets/hihat.svg" draggable="false" alt="">
+                            <span>Pedal HiHat</span>
+                            <p>F</p>
+                        </div>
+                    </div>
+
+                    <div class="row-4">
+                        <div class="pad" id="snareside">
+                            <audio class="snareside" src="/assets/sounds/jazzkit/snareside.wav"></audio>
+                            <img src="/assets/snare.svg" draggable="false" alt="">
+                            <span>Snare Side</span>
+                            <p>G</p>
+                        </div>
+                        <div class="pad" id="kick1">
+                            <audio class="kick1" src="/assets/sounds/jazzkit/kick1.wav"></audio>
+                            <img src="/assets/kick.svg" draggable="false"alt="">
+                            <span>Kick 1</span>
+                            <p>H</p>
+                        </div>
+                        <div class="pad" id="closedhh">
+                            <audio class="closedhh" src="/assets/sounds/jazzkit/closedhh.wav"></audio>
+                            <img src="/assets/hihat.svg" draggable="false" alt="">
+                            <span>Close - HiHat</span>
+                            <p>J</p>
+                        </div>
+                        <div class="pad" id="kick2">
+                            <audio class="kick2" src="/assets/sounds/jazzkit/kick2.wav"></audio>
+                            <img src="/assets/kick.svg" draggable="false" alt="">
+                            <span>Kick 2</span>
+                            <p>SPACE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
